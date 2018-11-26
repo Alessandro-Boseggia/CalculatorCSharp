@@ -1,0 +1,12 @@
+c:\users\alebo\source\repos\Calcolatricepiufiera\Calcolatricepiufiera\bin\Debug\Calcolatricepiufiera.exe.config
+c:\users\alebo\source\repos\Calcolatricepiufiera\Calcolatricepiufiera\bin\Debug\Calcolatricepiufiera.exe
+c:\users\alebo\source\repos\Calcolatricepiufiera\Calcolatricepiufiera\bin\Debug\Calcolatricepiufiera.pdb
+c:\users\alebo\source\repos\Calcolatricepiufiera\Calcolatricepiufiera\obj\Debug\Calcolatricepiufiera.csprojAssemblyReference.cache
+c:\users\alebo\source\repos\Calcolatricepiufiera\Calcolatricepiufiera\obj\Debug\Calcolatricepiufiera.Form1.resources
+c:\users\alebo\source\repos\Calcolatricepiufiera\Calcolatricepiufiera\obj\Debug\Calcolatricepiufiera.Properties.Resources.resources
+c:\users\alebo\source\repos\Calcolatricepiufiera\Calcolatricepiufiera\obj\Debug\Calcolatricepiufiera.csproj.GenerateResource.cache
+c:\users\alebo\source\repos\Calcolatricepiufiera\Calcolatricepiufiera\obj\Debug\Calcolatricepiufiera.csproj.CoreCompileInputs.cache
+c:\users\alebo\source\repos\Calcolatricepiufiera\Calcolatricepiufiera\obj\Debug\Calcolatricepiufiera.exe
+c:\users\alebo\source\repos\Calcolatricepiufiera\Calcolatricepiufiera\obj\Debug\Calcolatricepiufiera.pdb
+C:\Users\AleBo\source\repos\Calcolatricepiufiera\Calcolatricepiufiera\bin\Debug\NCalc.dll
+C:\Users\AleBo\source\repos\Calcolatricepiufiera\Calcolatricepiufiera\obj\Debug\Calcolatricepiufiera.csproj.CopyComplete
