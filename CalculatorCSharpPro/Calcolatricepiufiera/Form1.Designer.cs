@@ -46,6 +46,8 @@
             this.quattro = new System.Windows.Forms.Button();
             this.canc = new System.Windows.Forms.Button();
             this.virgola = new System.Windows.Forms.Button();
+            this.pa = new System.Windows.Forms.Button();
+            this.pc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // due
@@ -210,7 +212,7 @@
             // 
             // canc
             // 
-            this.canc.Location = new System.Drawing.Point(93, 59);
+            this.canc.Location = new System.Drawing.Point(102, 59);
             this.canc.Name = "canc";
             this.canc.Size = new System.Drawing.Size(75, 23);
             this.canc.TabIndex = 17;
@@ -228,11 +230,33 @@
             this.virgola.UseVisualStyleBackColor = true;
             this.virgola.Click += new System.EventHandler(this.virgola_Click);
             // 
+            // pa
+            // 
+            this.pa.Location = new System.Drawing.Point(183, 59);
+            this.pa.Name = "pa";
+            this.pa.Size = new System.Drawing.Size(75, 23);
+            this.pa.TabIndex = 19;
+            this.pa.Text = "(";
+            this.pa.UseVisualStyleBackColor = true;
+            this.pa.Click += new System.EventHandler(this.pa_Click);
+            // 
+            // pc
+            // 
+            this.pc.Location = new System.Drawing.Point(264, 59);
+            this.pc.Name = "pc";
+            this.pc.Size = new System.Drawing.Size(75, 23);
+            this.pc.TabIndex = 20;
+            this.pc.Text = ")";
+            this.pc.UseVisualStyleBackColor = true;
+            this.pc.Click += new System.EventHandler(this.pc_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pc);
+            this.Controls.Add(this.pa);
             this.Controls.Add(this.virgola);
             this.Controls.Add(this.canc);
             this.Controls.Add(this.quattro);
@@ -252,8 +276,7 @@
             this.Controls.Add(this.ris);
             this.Controls.Add(this.due);
             this.Name = "Form1";
-            this.Text = "Form1";
-            
+            this.Text = "Calcolatrice";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,6 +302,9 @@
         private System.Windows.Forms.Button quattro;
         private System.Windows.Forms.Button canc;
         private System.Windows.Forms.Button virgola;
+        private System.Windows.Forms.Button pa;
+        private System.Windows.Forms.Button pc;
     }
 }
 
+//QDRAb6BQDLTeZZq1oiP79s98

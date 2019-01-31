@@ -10,3 +10,7 @@ C:\Users\AleBo\source\repos\CalculatorCSharpPro\Calcolatricepiufiera\obj\Debug\C
 C:\Users\AleBo\source\repos\CalculatorCSharpPro\Calcolatricepiufiera\obj\Debug\CalculatorCSharpPro.csproj.CopyComplete
 C:\Users\AleBo\source\repos\CalculatorCSharpPro\Calcolatricepiufiera\obj\Debug\Calcolatricepiufiera.exe
 C:\Users\AleBo\source\repos\CalculatorCSharpPro\Calcolatricepiufiera\obj\Debug\Calcolatricepiufiera.pdb
+C:\Users\AleBo\source\repos\CalculatorCSharpPro\Calcolatricepiufiera\bin\Debug\Calcolatricepiufiera.exe.manifest
+C:\Users\AleBo\source\repos\CalculatorCSharpPro\Calcolatricepiufiera\bin\Debug\Calcolatricepiufiera.application
+C:\Users\AleBo\source\repos\CalculatorCSharpPro\Calcolatricepiufiera\obj\Debug\Calcolatricepiufiera.exe.manifest
+C:\Users\AleBo\source\repos\CalculatorCSharpPro\Calcolatricepiufiera\obj\Debug\Calcolatricepiufiera.application

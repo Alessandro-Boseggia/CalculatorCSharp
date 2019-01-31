@@ -23,10 +23,10 @@ namespace Calcolatricepiufiera
         }
         string n = "";// Variabile contenente l'esspressione
         char[] el = { '0', '.' }; // Array per eliminare di caratteri tramite il comando "nomestringa.TrimEnd"
-        int CO = 0;// Variabile di controllo per evitare di ritrovarsi tanti operatori arittemtici
         bool cont = false; // Variabile booleana per il controllo dello 0 dopo un operatore arittemtico dello 0
         int CV = 0; //variabile controllo della virgola
-
+        int CO = 0;// Variabile di controllo per evitare di ritrovarsi tanti operatori arittemtici
+        int CP = 0;//variabile di controllo delle parentesi
 
         //NUMERI
         private void uno_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace Calcolatricepiufiera
             switch (n == "0") // Utilizzo lo switch così da poter uscire dalla situazione vero o falsa evitando esecuzione di codice non desiderato
             {
                 case true:// Quando il caso è vero(quasto caso viene solitamente usato per la parte prima del operatore aritmetico)
-                    
+
                     n = "1"; // Pongo n = 1 così da sostituire lo 0 presente 
                     ris.Text = n;// Stampo il valore di n
                     CO = 0;// Metto la variabile di controllo degli operatori arittmetici a 0 così da poter esegure un operazuione
@@ -50,6 +50,7 @@ namespace Calcolatricepiufiera
                     n = n + "1";// Aggiungo 1 dopo eventuali numeri o operatori arittmetici
                     ris.Text = n;// Stampo il valore di n
                     CO = 0;// Metto la variabile di controllo degli operatori arittmetici a 0 così da poter esegure un operazuione
+                    CP = 1;
                     break;// Esco dal caso e vado avanti senza considerare il secondo caso
 
             }
@@ -72,8 +73,8 @@ namespace Calcolatricepiufiera
                         cont = false;
                     }
                     n = n + "2";
-                    ris.Text = n;                    
-                    CO = 0;                   
+                    ris.Text = n;
+                    CO = 0;
                     break;
             }
 
@@ -89,7 +90,7 @@ namespace Calcolatricepiufiera
                     ris.Text = n;
                     CO = 0;
                     break;
-                    
+
                 case false:
                     if (cont == true)
                     {
@@ -253,16 +254,16 @@ namespace Calcolatricepiufiera
                     CO = 0;
                     break;
                 case false:
-                   
-                        n = n + "0";
-                        ris.Text = n;
-                        if (CO == 1)//Controlla se sono stati premuti eventuali operatori arittmetici
-                        {
-                            cont = true;//Pongo cont a true
-                        }
-                        CO = 0;
-                        break;
-                    
+
+                    n = n + "0";
+                    ris.Text = n;
+                    if (CO == 1)//Controlla se sono stati premuti eventuali operatori arittmetici
+                    {
+                        cont = true;//Pongo cont a true
+                    }
+                    CO = 0;
+                    break;
+
             }
         }
 
@@ -271,13 +272,14 @@ namespace Calcolatricepiufiera
         private void piu_Click(object sender, EventArgs e)
         {
 
-            if (CO == 0) { 
+            if (CO == 0)
+            {
                 switch (n == "0")
                 {
-                    case true:                       
+                    case true:
                         n = "0+";// Aggiungo un + solo davanti allo 0 iniziale
-                        ris.Text = n;                       
-                        CO = 1;                       
+                        ris.Text = n;
+                        CO = 1;
                         break;
                     case false:
                         if (CO == 0) //controlla se è stato premuto un numero e nessun operatore arittemtico 
@@ -285,13 +287,14 @@ namespace Calcolatricepiufiera
 
                             n = n.TrimEnd(el[1]); //Elimina la virgola se non è stato premuto alcun numero dopo di essa
                         }
-                       
+
 
                         n = n + "+";
                         ris.Text = n;
-                       
+
                         CO = 1;
-                        CV = 0;                        
+                        CV = 0;
+                        CP = 0;
                         break;
                 }
 
@@ -300,14 +303,15 @@ namespace Calcolatricepiufiera
         private void meno_Click(object sender, EventArgs e)
         {
 
-            if (CO == 0) {
+            if (CO == 0)
+            {
                 switch (n == "0")
                 {
                     case true:
                         n = "0-";// Aggiungo un - solo davanti allo 0 iniziale
                         ris.Text = n;
                         CO = 1;
-                        
+
                         break;
 
                     case false:
@@ -320,16 +324,17 @@ namespace Calcolatricepiufiera
                         ris.Text = n;
                         CO = 1;
                         CV = 0;
-                        
+
                         break;
-                }      
+                }
             }
         }
-        
+
         private void per_Click(object sender, EventArgs e)
         {
 
-           if(CO == 0) {
+            if (CO == 0)
+            {
                 switch (n == "0")
                 {
                     case true:
@@ -348,17 +353,18 @@ namespace Calcolatricepiufiera
                         ris.Text = n;
                         CO = 1;
                         CV = 0;
-                        
+
                         break;
 
                 }
-             }
+            }
         }
 
         private void diviso_Click(object sender, EventArgs e)
         {
 
-           if(CO == 0) {
+            if (CO == 0)
+            {
 
                 switch (n == "0")
                 {
@@ -366,7 +372,7 @@ namespace Calcolatricepiufiera
                         n = "0/"; // Aggiungo un / solo davanti allo 0 iniziale
                         ris.Text = n;
                         CO = 1;
-                        
+
                         break;
                     case false:
                         if (CO == 0)
@@ -378,11 +384,12 @@ namespace Calcolatricepiufiera
                         ris.Text = n;
                         CO = 1;
                         CV = 0;
-                        
+
                         break;
 
 
-                }    }
+                }
+            }
         }
 
 
@@ -402,7 +409,8 @@ namespace Calcolatricepiufiera
                 ris.Text = f2; // Sampo il risultato
 
                 n = Convert.ToString(f.Evaluate());
-            } catch { ris.Text = "ERROR"; }
+            }
+            catch { ris.Text = "ERROR"; }
 
         }
 
@@ -414,10 +422,7 @@ namespace Calcolatricepiufiera
             CV = 0;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
-        }
 
         private void virgola_Click(object sender, EventArgs e)
         {
@@ -429,7 +434,7 @@ namespace Calcolatricepiufiera
                 switch (n == "0")
                 {
                     case true:
-                        n = "0."; 
+                        n = "0.";
                         ris.Text = n;
                         CV = 1;
                         break;
@@ -441,6 +446,72 @@ namespace Calcolatricepiufiera
 
 
                 }
+            }
+        }
+
+        private void pa_Click(object sender, EventArgs e)
+        {
+            switch (n == "0")
+            {
+                case true:
+                    n = "(";
+                    ris.Text = n;
+                    CO = 1;
+                    CP = 1;
+
+                    break;
+                case false:
+                    if (CP == 0)
+                    {
+                        if (CO == 0)
+                        {
+
+                            n = n.TrimEnd(el[1]);
+                        }
+                        n = n + "(";
+                        ris.Text = n;
+                        CO = 1;
+                        CV = 0;
+                        CP = 1;
+                    }
+
+                    break;
+            }
+
+
+        }
+
+        private void pc_Click(object sender, EventArgs e)
+        {
+            switch (n == "0")
+            {
+                case true:
+                    
+                    
+                        n = ")";
+                        ris.Text = n;
+                        CO = 1;
+                    
+                    break;
+
+                case false:
+                    
+                    
+                        if (CO == 0)
+                        {
+
+                            n = n.TrimEnd(el[1]);
+                        }
+                        n = n + ")";
+                        ris.Text = n;
+                        
+                        CV = 0;
+                        
+                    
+
+                    break;
+
+                    
             }
         }
     }
